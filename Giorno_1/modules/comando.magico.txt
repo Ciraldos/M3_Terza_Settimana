@@ -1,0 +1,1 @@
+ng g m nome-modulo --module app --routing true --route nome-path
