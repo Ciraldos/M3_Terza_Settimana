@@ -1,17 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from 'src/app/app-routing.module';
-import { SinglePostComponent } from 'src/app/single-post/single-post.component';
-
 
 
 @NgModule({
-  declarations: [SinglePostComponent],
+  declarations: [],
   imports: [
     CommonModule,
     FormsModule,
   ],
-  exports:[FormsModule, SinglePostComponent]
+  exports:[FormsModule]
 })
 export class SharedModule { }
