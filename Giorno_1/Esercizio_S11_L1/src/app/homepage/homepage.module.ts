@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { SharedModule } from '../shared/shared/shared.module';
+import { HomepageRoutingModule } from './homepage-routing.module';
+import { HomepageComponent } from './homepage.component';
+import { CommonModule } from '@angular/common';
+
+
+
+@NgModule({
+  declarations: [
+    HomepageComponent
+  ],
+  imports: [
+    CommonModule,
+    SharedModule,
+    HomepageRoutingModule,
+  ]
+})
+export class HomepageModule {  }
