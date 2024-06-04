@@ -1,1 +1,53 @@
-<p>reactive works!</p>
+<form (ngSubmit)="submit(loginData)" [formGroup]="loginData">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input type="text" class="form-control" formControlName="name" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Surname</label>
+    <input type="text" class="form-control" formControlName="surname" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" formControlName="password" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label"
+      >Confirm Password</label
+    >
+    <input
+      type="password"
+      class="form-control"
+      formControlName="confirmPassword"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="selectGender" class="form-label">Gender</label>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      formControlName="gender"
+      id="selectGender"
+    >
+      <option selected>Select Gender</option>
+      <option value="1">He/Him</option>
+      <option value="2">She/Her</option>
+      <option value="3">They/Them</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="img" class="form-label">Image</label>
+    <input
+      type="file"
+      class="upload"
+      multiple="multiple"
+      id="img"
+      formControlName="fileUpload"
+    />
+  </div>
+  <div class="mb-3">
+    <input type="textarea" class="form-control" formControlName="textarea" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

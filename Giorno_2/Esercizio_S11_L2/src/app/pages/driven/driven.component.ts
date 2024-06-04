@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-driven',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './driven.component.scss'
 })
 export class DrivenComponent {
+  user = {
+    name:null,
+    password:null
+  }
 
+  submit(form:NgForm){
+    console.log(form)
+  }
 }
