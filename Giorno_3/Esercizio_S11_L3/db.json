@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "dario@dario.com",
+      "password": "$2a$10$iHTzh.dQOEClSsuyfgtz0utkQNG7jxBIEvsh6BD9BKmpNgSQs6azi",
+      "nome": "Dario",
+      "cognome": "Del Giudice",
+      "propic": "C:\\fakepath\\EPICODE-pitto-color.png",
+      "pronouns": "He/Him",
+      "bio": "asdfasdfa asdfadfasfas dasdf asdf asdf asdf asdf asdf asdfaserasdfa sdasra sdf aser asdf asdrasd sdt",
+      "id": 1
+    }
+  ]
+}
