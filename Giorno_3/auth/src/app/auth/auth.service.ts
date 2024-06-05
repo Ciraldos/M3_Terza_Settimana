@@ -16,13 +16,14 @@ export class AuthService {
 
   authSubject = new BehaviorSubject<null|iUser>(null);//se nel behaviorsubject c'è null significa che l'utente non è loggato, altrimenti conterrà l'oggetto user con tutte le sue info
 
-  syncIsLoggedIn:boolean = false;
+  syncIsLoggedIn:boolean = false;//Utilizziamo questa variabile all'interno dell'interceptor e delle guard per poter sapere se l'utente è loggato o meno.
 
   user$ = this.authSubject.asObservable()//contiene i dati dell'utente loggato oppure null
+
   isLoggedIn$ = this.user$.pipe(
     map(user => !!user),
     tap(user => this.syncIsLoggedIn = user)
-  )//restituisce true se lò'utente è loggato, false se non lo è
+  )//restituisce true se l'utente è loggato, false se non lo è
   //!!user è come scrivere Boolean(user)
   //isLoggedIn$ = this.user$.pipe(map(user => Boolean(user)))
 

@@ -14,7 +14,9 @@ export class RegisterComponent {
   constructor(private authSvc:AuthService){}
 
   register(){
-    this.authSvc.register(this.newUser).subscribe()
+    this.authSvc.register(this.newUser).subscribe(()=>{
+      //avviso o redireziono l'utente
+    })
   }
 
 }
