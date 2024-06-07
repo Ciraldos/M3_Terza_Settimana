@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$3zIRlaHeFP9AhyVMYaOGPuvDoFMSskj73wS7ovMynAiObcttVHHc.",
+      "name": "admin",
+      "id": 1
+    },
+    {
+      "email": "ciao@ciao.it",
+      "password": "$2a$10$qeyhdcql0gGsGjvOqGHOfOK5YltfyX6Lqgl9QK8p8Wgku.YUeu5X6",
+      "name": "ciao",
+      "id": 2
+    },
+    {
+      "email": "root@root.it",
+      "password": "$2a$10$rCIcH4TmqCTu6xWK4WZVkOuqzQINA1Gi9KbGF1.Gu.3J8Sow5Qcde",
+      "name": "root",
+      "id": 3
+    },
+    {
+      "email": "root@root.com",
+      "password": "$2a$10$SI698IVGDFlrl8SqoU4TyOwU.I5Sr1er0qA.tG6sOAZeFsw4IuS52",
+      "name": "root",
+      "id": 4
+    }
+  ],
+  "movies-popular": [],
+  "favourites": [
+    {
+      "userId": 4,
+      "movie": {
+        "title": "adad",
+        "genre": "ada",
+        "year": "ad",
+        "img": "ad",
+        "id": 2
+      },
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<div class="container-fluid px-4">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-5 my-5 bg-white rounded-3 shadow-lg" id="boh">
+      <h1 class="mt-3 mb-5 text-center">Utente loggato</h1>
+      <div class="row">
+        <div class="col-12 px-4">
+          <div class="row align-items-center g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="fs-2">Name: {{ user?.name }}</h5>
+                <p>Email: {{ user?.email }}</p>
+                <p>Id: {{ user?.id }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

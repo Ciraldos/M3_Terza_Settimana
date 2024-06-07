@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a *ngIf="!isLoggedIn" class="navbar-brand" routerLink="">MovieBox</a>
+    <a *ngIf="isLoggedIn" class="navbar-brand" routerLink="/dashboard"
+      >MovieBox</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li *ngIf="!isLoggedIn" class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/auth/login"
+            >Login</a
+          >
+        </li>
+        <li *ngIf="!isLoggedIn" class="nav-item">
+          <a class="nav-link" routerLink="/auth/register">Register</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <a class="nav-link" routerLink="/dashboard/users">Users</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <a class="nav-link" routerLink="/dashboard/newmovie">New Movie</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <a class="nav-link" routerLink="/dashboard/favourites">Favourites</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <a class="nav-link" routerLink="/dashboard/profile">Profile</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <button (click)="logout()" class="nav-link">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
