@@ -25,7 +25,43 @@
       "id": 4
     }
   ],
-  "movies-popular": [],
+  "movies-popular": [
+    {
+      "title": "Interstellar",
+      "img": "https://citynews.stgy.ovh/~shared/images/tv/locandine/interstellar-41up.jpg",
+      "genre": "Fantascienza",
+      "year": "2014",
+      "id": 1
+    },
+    {
+      "title": "Inception",
+      "genre": "Fantascienza",
+      "img": "https://www.sorrisi.com/wp-content/uploads/2017/11/inception-886x494.jpg",
+      "year": "2011",
+      "id": 2
+    },
+    {
+      "title": "Memento",
+      "genre": "Thriller",
+      "year": "2000",
+      "img": "https://citynews.stgy.ovh/~shared/images/tv/locandine/memento-d35.jpg",
+      "id": 3
+    },
+    {
+      "title": "Batman: Il Cavaliere Oscuro",
+      "genre": "Thriller",
+      "img": "https://sm.ign.com/t/ign_it/screenshot/default/cinemaalmaxxi-darkknight_5tz9.1280.jpg",
+      "year": "2012",
+      "id": 4
+    },
+    {
+      "img": "https://cdn.blogo.it/MI9csDRtOFo55UlfTHfTROq36ps=/1280x720/smart/https://www.blogo.it/app/uploads/sites/3/2020/04/stasera-in-tv-jurassic-park-3-su-italia-1-6.jpg",
+      "year": "2001",
+      "title": "Jurassic Park 3",
+      "genre": "Azione",
+      "id": 5
+    }
+  ],
   "favourites": [
     {
       "userId": 4,
@@ -37,6 +73,28 @@
         "id": 2
       },
       "id": 1
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "title": "Interstellar",
+        "img": "https://citynews.stgy.ovh/~shared/images/tv/locandine/interstellar-41up.jpg",
+        "genre": "Fantascienza",
+        "year": "2014",
+        "id": 1
+      },
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "title": "Memento",
+        "genre": "Thriller",
+        "year": "2000",
+        "img": "https://citynews.stgy.ovh/~shared/images/tv/locandine/memento-d35.jpg",
+        "id": 3
+      },
+      "id": 3
     }
   ]
 }
