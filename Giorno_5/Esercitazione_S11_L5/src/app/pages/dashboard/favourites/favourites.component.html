@@ -21,10 +21,7 @@
                   <h5 class="fs-2 text-white">{{ f.movie.title }}</h5>
                   <p class="text-white">{{ f.movie.genre }}</p>
                   <p class="text-white">{{ f.movie.year }}</p>
-                  <button
-                    class="btn myBtnTwo ms-4"
-                    (click)="deleteFav(f.movie)"
-                  >
+                  <button class="btn myBtnTwo" (click)="deleteFav(f.movie)">
                     Elimina
                   </button>
                 </div>
