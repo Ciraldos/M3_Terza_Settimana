@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FavouriteMoviesService } from '../../../services/favourite-movies.service';
 import { iMovieFavourites } from '../../../models/i-movie-favourites';
 import { AuthService } from '../../../auth/auth.service';
-import { iMovie } from '../../../models/i-movie';
 
 @Component({
   selector: 'app-favourites',
