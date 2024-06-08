@@ -15,21 +15,13 @@ export class MoviesService {
     return this.http.get<iMovie[]>(this.moviesUrl)
   }
 
-  getById(id: number) {
-    return this.http.get<iMovie[]>(`${this.moviesUrl}/${id}`)
-  }
+
   create(newMovie:Partial<iMovie>){
     return this.http.post<iMovie>(this.moviesUrl, newMovie)
-  }
-
-  update(movie:iMovie){
-    return this.http.put(`${this.moviesUrl}/${movie.id}`,movie)
   }
 
   delete(id:number){
     return this.http.delete(`${this.moviesUrl}/${id}`)
   }
-  loadMovies(): Observable<iMovie[]> {
-    return this.getAllMovies();
-  }
+
 }

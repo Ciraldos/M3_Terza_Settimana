@@ -15,14 +15,6 @@ export class FavouriteMoviesService {
 
   favouriteUrl: string = "http://localhost:3000/favourites"
 
-  getAll(){
-    return this.http.get<iMovieFavourites[]>(this.favouriteUrl)
-  }
-
-  getById(id:number){
-    return this.http.get<iMovieFavourites>(`${this.favouriteUrl}/${id}`)
-  }
-
   getFavouriteByUserId(userId:number){
     return this.http.get<iMovieFavourites[]>(`${this.favouriteUrl}?userId=${userId}`)
   }
