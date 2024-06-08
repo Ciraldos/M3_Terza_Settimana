@@ -28,11 +28,15 @@ export class FavouritesComponent implements OnInit {
     }
   }
 
-  deleteFav(movie: iMovie) {
-    this.favSrv.delete(movie.id).subscribe(() => {
-      this.favSrv.getAll().subscribe(movies => {
+
+deleteFav(favourite: iMovieFavourites) {
+  if (favourite.id) {
+    this.favSrv.delete(favourite.id).subscribe(() => {
+      this.favSrv.getFavouriteByUserId(favourite.userId).subscribe(movies => {
         this.favMovies = movies;
       });
     });
   }
+}
+
 }

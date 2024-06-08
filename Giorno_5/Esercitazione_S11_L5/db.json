@@ -76,17 +76,6 @@
   ],
   "favourites": [
     {
-      "userId": 4,
-      "movie": {
-        "title": "adad",
-        "genre": "ada",
-        "year": "ad",
-        "img": "ad",
-        "id": 2
-      },
-      "id": 1
-    },
-    {
       "userId": 1,
       "movie": {
         "title": "Interstellar",
@@ -95,7 +84,7 @@
         "year": "2014",
         "id": 1
       },
-      "id": 2
+      "id": 1
     },
     {
       "userId": 1,
