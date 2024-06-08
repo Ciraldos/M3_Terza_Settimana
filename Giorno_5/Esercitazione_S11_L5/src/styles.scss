@@ -5,3 +5,12 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@524&display=swap');
+
+body{
+  font-family: "Barlow", sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

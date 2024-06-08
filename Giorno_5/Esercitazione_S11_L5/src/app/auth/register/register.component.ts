@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { iUser } from '../../models/i-user';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -10,9 +11,12 @@ import { AuthService } from '../auth.service';
 export class RegisterComponent {
 
   newUser:Partial<iUser> = {}
-  constructor(private authSrv:AuthService){}
+  constructor(private authSrv:AuthService,
+    private router:Router
+  ){}
 
   register(){
-    this.authSrv.register(this.newUser).subscribe()
+    this.authSrv.register(this.newUser).subscribe(()=>{
+      this.router.navigate(['/auth/login'])})
   }
 }

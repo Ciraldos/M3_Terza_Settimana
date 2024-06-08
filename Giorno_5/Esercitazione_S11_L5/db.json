@@ -23,6 +23,18 @@
       "password": "$2a$10$SI698IVGDFlrl8SqoU4TyOwU.I5Sr1er0qA.tG6sOAZeFsw4IuS52",
       "name": "root",
       "id": 4
+    },
+    {
+      "email": "ciaone@ciaone.it",
+      "password": "$2a$10$GJJs3oqdjNZYqs4Wtww4COpicREtQ29GRYBXeHzdwaaasVXfl6DXq",
+      "name": "ciao",
+      "id": 5
+    },
+    {
+      "email": "password@password.com",
+      "password": "$2a$10$q4kgClL6N7eHdQC07jDLdObD2iWyuuDjKzVXuCZ4M/qP7Plc5poxq",
+      "name": "password",
+      "id": 6
     }
   ],
   "movies-popular": [

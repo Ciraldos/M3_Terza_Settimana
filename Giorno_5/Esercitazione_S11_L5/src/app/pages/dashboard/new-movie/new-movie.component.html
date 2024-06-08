@@ -1,7 +1,7 @@
-<div class="container-fluid px-4">
+<div class="container-fluid px-4" id="home">
   <div class="row justify-content-center">
-    <div class="col-12 col-md-5 my-5 bg-white rounded-3 shadow-lg" id="boh">
-      <h1 class="mt-3 mb-5 text-center">Aggiungi Film</h1>
+    <div class="col-12 col-md-5 my-5 myBg rounded-3 shadow-lg" id="boh">
+      <h1 class="mt-3 mb-5 text-center text-white">Aggiungi Film</h1>
       <div class="row">
         <div class="col-12 px-4">
           <div class="row align-items-center justify-content-center g-0">
@@ -12,7 +12,7 @@
                     type="text"
                     class="mt-3"
                     [(ngModel)]="newMovie.title"
-                    class="form-control"
+                    class="form-control myBg"
                     placeholder="Inserisci titolo..."
                   />
                 </div>
@@ -21,7 +21,7 @@
                     type="text"
                     class="mt-3"
                     [(ngModel)]="newMovie.genre"
-                    class="form-control"
+                    class="form-control myBg"
                     placeholder="Inserisci genere..."
                   />
                 </div>
@@ -30,7 +30,7 @@
                     type="text"
                     class="mt-3"
                     [(ngModel)]="newMovie.year"
-                    class="form-control"
+                    class="form-control myBg"
                     placeholder="Inserisci anno..."
                   />
                 </div>
@@ -39,12 +39,12 @@
                     type="text"
                     class="mt-3"
                     [(ngModel)]="newMovie.img"
-                    class="form-control"
+                    class="form-control myBg"
                     placeholder="Inserisci url immagine..."
                   />
                 </div>
                 <div class="mb-3">
-                  <button class="btn btn-primary" (click)="createMovie()">
+                  <button class="btn myBtn" (click)="createMovie()">
                     Crea Film
                   </button>
                 </div>

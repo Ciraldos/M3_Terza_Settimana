@@ -1,7 +1,12 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
   <div class="container-fluid">
-    <a *ngIf="!isLoggedIn" class="navbar-brand" routerLink="">MovieBox</a>
-    <a *ngIf="isLoggedIn" class="navbar-brand" routerLink="/dashboard"
+    <a *ngIf="!isLoggedIn" class="navbar-brand text-white" routerLink=""
+      >MovieBox</a
+    >
+    <a
+      *ngIf="isLoggedIn"
+      class="navbar-brand text-white"
+      routerLink="/dashboard"
       >MovieBox</a
     >
     <button
@@ -19,32 +24,40 @@
       <ul class="navbar-nav">
         <li *ngIf="!isLoggedIn" class="nav-item">
           <a
-            class="nav-link active"
+            class="nav-link active text-white"
             aria-current="page"
             routerLink="/auth/login"
             >Login</a
           >
         </li>
         <li *ngIf="!isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/auth/register">Register</a>
+          <a class="nav-link text-white" routerLink="/auth/register"
+            >Register</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+          <a class="nav-link text-white" routerLink="/dashboard">Dashboard</a>
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/users">Users</a>
+          <a class="nav-link text-white" routerLink="/dashboard/users">Users</a>
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/newmovie">New Movie</a>
+          <a class="nav-link text-white" routerLink="/dashboard/newmovie"
+            >New Movie</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/favourites">Favourites</a>
+          <a class="nav-link text-white" routerLink="/dashboard/favourites"
+            >Favourites</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/dashboard/profile">Profile</a>
+          <a class="nav-link text-white" routerLink="/dashboard/profile"
+            >Profile</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <button (click)="logout()" class="nav-link">Logout</button>
+          <button (click)="logout()" class="nav-link text-white">Logout</button>
         </li>
       </ul>
     </div>

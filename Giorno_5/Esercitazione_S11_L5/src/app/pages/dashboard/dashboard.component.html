@@ -1,11 +1,11 @@
-<div class="container-fluid px-4">
+<div class="container-fluid px-4" id="home">
   <div class="row justify-content-center">
-    <div class="col-12 col-md-5 my-5 bg-white rounded-3 shadow-lg" id="boh">
-      <h1 class="mt-3 mb-5 text-center">I nostri titoli</h1>
+    <div class="col-12 col-md-5 my-5 rounded-3 shadow-lg myBg">
+      <h1 class="mt-3 mb-4 text-center text-white">I nostri titoli</h1>
       <div class="row">
         <div class="col-12 px-4">
           <div class="card mb-3 shadow-sm" *ngFor="let m of moviesArr">
-            <div class="row align-items-center g-0">
+            <div class="row align-items-center myBg g-0">
               <div class="col-md-4">
                 <img
                   [src]="m.img"
@@ -14,14 +14,17 @@
                 />
               </div>
               <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="fs-2">{{ m.title }}</h5>
-                  <p>{{ m.genre }}</p>
-                  <p>{{ m.year }}</p>
-                  <button class="btn btn-primary" (click)="addToFavourites(m)">
+                <div class="card-body myBg">
+                  <h5 class="fs-2 text-white">{{ m.title }}</h5>
+                  <p class="text-white">{{ m.genre }}</p>
+                  <p class="text-white">{{ m.year }}</p>
+                  <button class="btn myBtn" (click)="addToFavourites(m)">
                     Aggiungi ai preferiti
                   </button>
-                  <button class="btn btn-danger ms-4" (click)="deleteMovie(m)">
+                  <button
+                    class="btn btn-danger myBtnTwo ms-4"
+                    (click)="deleteMovie(m)"
+                  >
                     Elimina
                   </button>
                 </div>
